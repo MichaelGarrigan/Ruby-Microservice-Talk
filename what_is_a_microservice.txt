@@ -1,0 +1,47 @@
+
+What is a microservice?
+
+Microservices is a term with dual meanings, the first is a specialized software application that is mindfully reduced in scope and second is an architectual pattern in building software. Microservices have enjoyed a spike in popularity with engineers when it comes to designing applications. And although there are many compelling reasons that have made microservices a performant, reliable and proper architectual choice for our project we will also see some of the criticisims and downsides of the microservice architecture. 
+
+Attributes of a microservice.
+1) Cluster of small services.
+2) Each small service runs on an independent process.
+3) Communication between services are mainly HTTP.
+4) Smart Endpoints & Dumb Pipes -- a design pattern used in Unix programs
+5) Open choice of technologies (ie. C++, Rust, Python, PHP)
+
+Critisims of the microservice pattern.
+1) Additional Complexity - Fault tolerance, load balanceing, auto scalling, clustering, network latency
+2) More Complicated Testing
+3) Network communication is more expensive than in-process calls.
+
+Different Architectual Types.
+
+Event-Drivin -- An event can be a change of "state" that will trigger an event-emmitter and be channeled into event-channels.
+
+Monolithic -- Self contained and independent from other applications
+
+Client-Server -- A distributed system of routing tasks/work.
+
+Peer-to-Peer -- A network based on nodes.
+
+Service-Orientated
+
+Microservice Platforms
+AWS Lambda
+Docker and Kubernetes
+Spring Boot
+Azure Functions
+
+Microservice Triggers
+1) Respond to HTTP requests
+2) Consume events from a queue
+3) Run on a schedule
+4) A lifecycle event
+5) Event Sourced Mapping
+
+AWS Lambda Execution Context
+When your lambda function has completed, AWS Lambda will create or maintain a temporary runtime environment that has resolved external dependecies. This is done to increase performance with 'cold start' latency. AWS will provide 512 MB of storage/disk space in the /tmp directory. This cache is available to you because your execution context is frozen.
+
+Building a Custom runtime
+Include an executable file named bootstrap. When your lambda environment is executed then bootstrap will be executed. It can initialize a script or call another file to initialize setup.
