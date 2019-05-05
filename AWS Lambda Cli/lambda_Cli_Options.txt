@@ -1,0 +1,66 @@
+
+A simple summary of the options when using the AWS CLI tool
+
+$ aws lambda <option>
+
+-- Availiable <option> --
+
+add-permission
+
+create-alias
+
+create-event-source-mapping
+
+o create-function
+
+o delete-alias
+
+o delete-event-source-mapping
+
+o delete-function
+
+o delete-function-concurrency
+
+o get-account-settings
+
+o get-alias
+
+o get-event-source-mapping
+
+o get-function
+
+o get-function-configuration
+
+o get-policy
+
+o help
+
+o invoke
+
+o list-aliases
+
+o list-event-source-mappings
+
+o list-functions
+
+o list-tags
+
+o list-versions-by-function
+
+o publish-version
+
+o put-function-concurrency
+
+o remove-permission
+
+o tag-resource
+
+o untag-resource
+
+o update-alias
+
+o update-event-source-mapping
+
+o update-function-code
+
+o update-function-configuration
